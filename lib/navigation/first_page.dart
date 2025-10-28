@@ -44,7 +44,7 @@ class _FirstPageState extends State<FirstPage> {
         ]
       ),
       /*
-      drawer: Drawer( //aside menu
+      drawer: Drawer( //aside menu (can be used with stateless)
         backgroundColor: Colors.blue[100],
         child: Column(
           children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learning/pages/todo_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,18 +8,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false, // hides debug banner on top
-      home: Scaffold(),
-      /*routes: { // declarate routes for navigation
-        "/firstpage": (context) => FirstPage(),
-        "/homepage": (context) => HomePage(),
-        "/profilepage": (context) => ProfilePage(),
-        "/settingspage": (context) => SettingsPage(),
-      },*/
+      debugShowCheckedModeBanner: false,
+      home: ToDoPage(),
     );
   }
 }

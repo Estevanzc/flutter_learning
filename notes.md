@@ -158,3 +158,13 @@ body: Center(
         child: Text("go to the second page")
     ),
 ),
+
+## Navigation
+
+> it is often putten on the main page to set the routes for the navigation widgets
+routes: { // declarate routes for navigation
+    "/firstpage": (context) => FirstPage(),
+    "/homepage": (context) => HomePage(),
+    "/profilepage": (context) => ProfilePage(),
+    "/settingspage": (context) => SettingsPage(),
+},
