@@ -35,6 +35,16 @@
 
 ## Widgets
 
+appBar: AppBar(
+    title: Text("Test app"),
+    backgroundColor: Colors.blue,
+    elevation: 0,
+    leading: Icon(Icons.menu),// left icon
+    actions: [ // right icon
+    IconButton(onPressed: () {}, icon: Icon(Icons.logout)) // icon with actions
+    ],
+),
+
 body: ListView( // hovers verticaly by default when overflowed
     scrollDirection: Axis.horizontal, // ads a horizontal overflow
     children: [
@@ -137,5 +147,14 @@ body: ListView.builder( // builds a list of items based on given length
     itemCount: 10,
     itemBuilder: (context, index) => ListTile(
     title: Text(index.toString()),
+    ),
+),
+
+body: Center(
+    child: ElevatedButton(
+        onPressed: () {
+            Navigator.pushNamed(context, "/secondpage");
+        },
+        child: Text("go to the second page")
     ),
 ),
